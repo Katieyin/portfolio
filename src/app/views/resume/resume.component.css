@@ -1,0 +1,42 @@
+.resume-body{
+  background-color: #ffeee6;
+  max-width: 100%;
+  padding-bottom: 50px;
+}
+
+.technical{
+  text-align: left;
+  padding-top: 100px;
+}
+
+.skill{
+  padding-top: 50px;
+  color: #2d1f2c;
+  font-size: 15px;
+}
+
+.title{
+  color: #2d1f2c;
+  font-size: 30px;
+  border: 2px;
+}
+
+.communication{
+  padding-top: 100px;
+}
+
+hr {
+  border-color: #2d1f2c;
+  border-width: 2px;
+  margin-top: 1px;
+}
+
+.row {
+  margin: 0
+}
+
+img {
+  max-width:100%;
+  height: 300px;
+}
+
