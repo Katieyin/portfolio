@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {HomeComponent} from './views/home/home.component';
-import {HeaderComponent} from './views/header/header.component';
 import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { ResumeComponent } from './views/resume/resume.component';
@@ -18,7 +17,6 @@ import {HorizontalTimelineComponent} from "app/horizontal-timeline/horizontal-ti
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent,
     ResumeComponent,
     ProjectComponent,
     ContactComponent,
