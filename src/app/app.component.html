@@ -7,34 +7,15 @@
   </div>
 
   <ul class="nav nav-pills nav-justified">
-    <li><a data-toggle="pill" [routerLink]="['/home']" data-target="#tab-1">Home</a></li>
+    <li><a data-toggle="pill" (click)="onSelect($event, 'home')" data-target="#tab-1">Home</a></li>
    <!-- <li><a data-toggle="pill" href [routerLink]="['/aboutme']" data-target="#tab-2">About Me</a></li> -->
-    <li><a data-toggle="pill" [routerLink]="['/resume']" data-target="#tab-3">Resume</a></li>
-    <li><a data-toggle="pill"  [routerLink]="['/experience']" data-target="#tab-4">Experience</a></li>
-    <li><a data-toggle="pill"  [routerLink]="['/project']" data-target="#tab-5">Project</a></li>
-    <li><a data-toggle="pill"  [routerLink]="['/contact']" data-target="#tab-6">Contact</a></li>
+    <li><a data-toggle="pill" (click)="onSelect($event, 'resume')" data-target="#tab-3">Resume</a></li>
+    <li><a data-toggle="pill" (click)="onSelect($event, 'experience')"data-target="#tab-4">Experience</a></li>
+    <li><a data-toggle="pill" (click)="onSelect($event, 'project')" data-target="#tab-5">Project</a></li>
+    <li><a data-toggle="pill" (click)="onSelect($event, 'contact')" data-target="#tab-6">Contact</a></li>
   </ul>
-
-  <div class="tab-content">
-    <div id="tab-1" class="tab-pane fade in active">
-      <app-home></app-home>
-    </div>
-    <!--<div id="tab-2" class="tab-pane fade in active">
-      <app-about-me></app-about-me>
-    </div>-->
-    <div id="tab-3" class="tab-pane fade in active">
-      <app-resume></app-resume>
-    </div>
-    <div id="tab-4" class="tab-pane fade in active">
-      <app-experience></app-experience>
-    </div>
-    <div id="tab-5" class="tab-pane fade in active">
-      <app-project></app-project>
-    </div>
-    <div id="tab-6" class="tab-pane fade in active">
-      <app-contact></app-contact>
-    </div>
-  </div>
+  <router-outlet></router-outlet>
+  
   <div class="row page-footer">
     <div class="col-sm-12 footer-copyright">
         © 2018 Copyright: Qingyi Yin

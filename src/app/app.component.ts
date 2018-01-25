@@ -1,17 +1,18 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
+@Component({selector: 'app-root', templateUrl: './app.component.html', styleUrls: ['./app.component.css']})
 export class AppComponent {
-  title = 'app';
+    title = 'app';
 
-  constructor() {
-  }
+    constructor(private router: Router) {}
 
-  onSelect(event, tab: string ) {
-    console.log(tab);
-  }
+    onSelect(event, tab: string) {
+        try {
+            this.router
+                .navigate(['/', tab]);
+        } catch (e) {
+            console.log(e)
+        }
+    }
 }

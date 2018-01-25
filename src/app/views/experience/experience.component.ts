@@ -32,7 +32,7 @@ export class ExperienceComponent implements OnInit {
         date: new Date(2016, 12, 1),
         title: 'Teaching Assistant - Carleton University',
         content: this.content2 },
-      { caption: '01 Mar',
+      { caption: '01 Apr',
         date: new Date(2017, 3, 1),
         title: 'Teaching Assistant - Carleton University',
         content: this.content3 },

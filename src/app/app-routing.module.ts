@@ -5,18 +5,18 @@ import {HomeComponent} from './views/home/home.component';
 import {ResumeComponent} from './views/resume/resume.component';
 import {ProjectComponent} from './views/project/project.component';
 import {ContactComponent} from './views/contact/contact.component';
-import {ExperienceComponent} from "./views/experience/experience.component";
-import {AboutMeComponent} from "./views/about-me/about-me.component";
+import {ExperienceComponent} from './views/experience/experience.component';
+import {AboutMeComponent} from './views/about-me/about-me.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', pathMatch: 'full', component: HomeComponent },
-  { path: 'aboutme', pathMatch: 'full', component: AboutMeComponent },
-  { path: 'resume', pathMatch: 'full', component: ResumeComponent },
-  { path: 'project', pathMatch: 'full', component: ProjectComponent },
-  { path: 'contact', pathMatch: 'full', component: ContactComponent },
-  { path: 'experience', pathMatch: 'full', component: ExperienceComponent },
+  { path: 'home',  component: HomeComponent },
+  // { path: 'aboutme',  component: AboutMeComponent },
+  { path: 'resume',  component: ResumeComponent },
+  { path: 'project',  component: ProjectComponent },
+  { path: 'contact',  component: ContactComponent },
+  { path: 'experience',  component: ExperienceComponent },
 ];
 
 @NgModule({
